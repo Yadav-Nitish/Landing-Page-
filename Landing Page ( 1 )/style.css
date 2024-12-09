@@ -104,8 +104,7 @@ li{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: brown; */
-    /* margin: auto; */
+    
 }
 
 .hero-content h1 {
@@ -150,12 +149,7 @@ li{
     
 }
 
-/* .menu-btn{
 
-    width: 30px;
-    height: 40px;
-    cursor: pointer;
-} */
 .menu-btn {
 
     position: absolute;
@@ -163,7 +157,7 @@ li{
     top:5px;
     width: 40px;
     cursor: pointer ;
-    /* display: none; */
+  
 }
 
 @media only screen and (max-width: 850px ){
@@ -190,7 +184,7 @@ li{
     height: 100vh;
     justify-content: center;
     
-    /* background-color: brown; */
+  
     
    }
    .nav-links ul li {
