@@ -1,0 +1,1051 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    overflow-x: hidden;  
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.main{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav{
+    
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+   
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.nav h1 {
+
+    font-size: 3.0vw;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.nav .nav-links {
+     
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+.last-links{
+
+    width: 50px;
+   display: flex;
+
+
+}
+
+.nav .nav-links a span {
+
+   
+    padding: 10px;
+    font-size: 25px;
+}
+
+.nav .nav-links a:nth-last-child(1){
+    
+    padding: 7px 18px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;    /*   to hide the overflow part of dive green embed over contact us  */
+}
+
+.nav .nav-links a:nth-last-child(1) #green{
+
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.nav .nav-links a:nth-last-child(1) h5
+{
+    position: relative;
+    z-index: 99;
+}
+.nav .nav-links a:hover #green {
+
+    left: 0;
+    transition: left 0.8s ease-in;
+}
+
+
+  .main>h1{
+    
+    font-size: 4vw;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+  .main>h1::after {
+
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    bottom: 0;
+    left: 20%;
+    transform: translateX(-50%,0);
+}
+
+
+.main #img1 {
+
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    top: 20%;
+    left: 7%;
+    z-index: -99;
+}
+.main #img2 {
+
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 15%;
+    right: 21%;
+    z-index: -99;
+}
+.main #img3 {
+
+    position: absolute;
+    height: 220px;
+    width: 250px;
+    bottom: 7%;
+    right: 10%;
+}
+
+.main>img {
+
+    transition: margin 0.4s ease;
+}
+
+.main img:hover {
+
+    margin-top: -20px;
+}
+
+.main a h4 {
+    
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* section - about us */
+
+
+ .about-us {
+
+    width: 100%;
+    min-height: 70vh;
+    background-color: #000;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+  
+}
+.text {
+
+    width: 100%;
+    min-height: 40vh;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  
+}
+
+
+.about-us .text a {
+
+  position: relative;
+}
+ .about-us .text  #green-2
+{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    /* overflow: hidden;
+    transition: left o.4 ease-in; */
+}
+.about-us .text  a>h4 {
+
+    position: relative;
+    z-index:99;
+}
+.about-us .text  a>h4:hover {
+    color: black;
+}
+.about-us .text  a:hover  #green-2{
+    
+    left: 0%;
+    transition: left 0.4s ease;
+
+}
+
+
+.text h3 {
+    
+    width: 100vw;
+    font-weight: 300;
+   
+}
+
+.text p {
+    
+    width: 80vw;
+    font-size: 4vmin;
+    margin-top: 20px;
+   
+}
+
+.text a {
+    
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white; 
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/* section - description */
+
+.description {
+
+    width: 100%;
+    min-height: 100vh;  
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container {
+
+    width: 45%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+}
+
+.left-img {
+    
+    width: 40%;
+    min-height: 100vh;
+    /* flex-basis:20%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.left-img .top {
+   
+    width: 100%;
+    min-height: 68vh;
+    background-image: url(assets/asset\ 6.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.left-img .bottom {
+   
+    width: 100%;
+    min-height: 28vh;
+    background-image: url(assets/asset\ 7.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.right-img {
+
+    width:50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+ .right-img .top{
+
+    width: 100%;
+    min-height: 35vh;
+    background-image: url(assets/asset\ 8.webp);
+    background-position: center;
+    background-size: cover;
+} 
+
+.right-img .bottom{
+
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(assets/asset\ 9.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.text-container{
+    width: 50%;
+    min-height: 100vh;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+.text-container .link{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ 
+}
+
+.text-container .link>a {
+
+    position: relative;
+    
+}
+
+.text-container .link a .green-3{
+   
+    width: 100%;
+    height: 100%;
+    background-color: springgreen; 
+    position: absolute;
+    top:0%;
+    left: -100%;
+    overflow: hidden;
+}
+.text-container .link a:hover .green-3{
+   
+    left: 0%;
+    transition: left 0.4s ease;
+
+}
+.text-container .link a>h4 {
+  
+   position: relative ;
+   z-index: 99;
+}
+
+.text-container .link .photo
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(assets/asset\ 10.webp);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid red;
+    background-color: springgreen ;
+}
+
+.description .text-container>h2 {
+    
+    width: 500px;
+    font-size: 47px;
+    text-transform: capitalize;
+}
+.description .text-container>p {
+
+    width: 600px;
+    padding: 20px 0px;
+}
+
+.description .text-container .link h4 {
+
+    width: 250px;
+    text-align: center; 
+    font-size: 20px;
+    font-weight: 450;
+    
+}
+.description .text-container .link a>h4 {
+    
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 5px;
+    border-radius: 30px;
+}
+
+
+/* section - brands */
+
+.brands {
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px;
+    
+}
+
+
+.brands p 
+{   
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    font-size: 5vmin;
+    font-weight: 500;
+}
+
+.brands-container {
+    width: 100%;
+    min-height:70vh;
+    padding: 20px 60px; 
+    display: grid;    
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+.brands-container img{
+   
+    width: 130px;
+   text-align: center;
+}
+.brands-container #brand {
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+} 
+
+
+/* section - ads-poster */
+
+
+
+.ads-poster {
+
+    width: 100%;
+    min-height: 80vh;
+    
+}
+.ads-container{
+
+    width: 100%;
+    min-height: 60vh ;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+.ads-container .poster-1 {
+
+    flex-basis: 40%;
+    min-height: inherit;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786);
+    background-position: center;
+    background-size: cover;
+}
+.poster-1 img {
+
+    width: 200px;
+}
+
+.ads-container .poster-1 .data-link .bottom-part{
+    
+   
+    display: flex;
+    align-items: center;
+  
+}
+.ads-container .poster-1 .data-link .bottom-part i{
+
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    /* border: 2px solid black;
+    border-radius: 10px; */
+}
+.ads-container .poster-1 .data-link  p{
+
+    width: 300px;
+}
+
+
+.ads-container .poster-2 {
+
+    flex-basis: 40%;
+    min-height: inherit;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(assets/asset\ 9.webp);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    
+} 
+
+.poster-2 img{
+
+    width: 150px;
+
+}
+
+.ads-container .poster-2 img:hover{
+   
+    margin-bottom: 20px;
+}
+
+
+.ads-container .poster-2 .data-link .bottom-part {
+    
+  
+   display: flex;
+   align-items: center;
+   
+}
+
+.ads-container .poster-2 .data-link .bottom-part i{
+    
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    
+}
+
+.ads-container .poster-2 .data-link  p{
+
+    width: 300px;
+}
+
+
+.ads-poster .link{
+
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+
+}
+.ads-poster .link a {
+    position: relative;
+}
+
+ #green-1{
+
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    overflow: hidden;
+    transition: left 0.3s ease;
+}
+
+.ads-poster .link a:hover #green-1{
+    
+    left: 0%;
+  
+}
+.ads-poster .link p{
+    
+    position: relative;
+    z-index: 99;
+}
+
+.ads-poster .link .photo
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(assets/asset\ 30.webp);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid red;
+    background-color: springgreen ;
+}
+.ads-poster .link h4 {
+
+    width: 160px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 450;
+    /* background-color: aqua; */
+}
+.ads-poster .link a {
+    
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 5px;
+    border-radius: 30px;
+}
+
+
+/* section - marketing */
+
+
+/* section - footer */
+
+.footer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.footer .top {
+
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    background-color: white;
+}
+.footer .top .callback {
+   
+    width: 50%;
+    height: 300px;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 25%;
+    top: 1%;
+}
+
+ .bottom{
+
+    width: 100%;
+    height: 70%;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: white;
+    background-color: black;
+}
+.bottom .b-top {
+   
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 30px ;
+    /* background-color: aqua; */
+}
+
+.b-top .title {
+
+   width: 25%;
+   height: 50%;
+   
+   
+}
+.b-top .title h1 {
+    
+    font-size: 40px;
+    font-weight: 500;
+}
+.b-top .title a {
+
+    color: white;
+}
+
+
+.b-top .learn {
+
+    width: 10%;
+    height: 50% ;
+    
+ }
+ .b-top .learn a {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+ }
+
+ .b-top .explore {
+
+    width: 10%;
+    height: 50% ;
+   
+ }
+
+ .b-top .explore a {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+ }
+
+ .b-top .find-us {
+
+    width: 15%;
+    height: 50% ;
+    /* background-color: aqua; */
+ }
+ .b-top .find-us a {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+ }
+
+ .b-top .company {
+
+    width: 10%;
+    height: 50% ;
+   
+ }
+
+ .b-top .company a {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+ }
+
+ .b-top p{
+
+    color: white;
+    font-size: 20px;
+ }
+
+ .b-top a{
+
+    color: rgb(205, 198, 198);
+    font-size: 20px;
+    font-weight: 200;
+ }
+
+.last-footer {
+    
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-footer .contain {
+
+    display: flex;
+    align-items : center;
+    gap: 10px;
+}
+
+.last-footer .contain i {
+    font-size: 20px;
+}
+
+
+
+
+
+@media (max-width:765px){
+    
+    .main {
+        width: 100%;
+        min-height: 60vh;
+        padding-top: 50px;
+    }
+    .nav {
+
+        padding: 10px 30px;
+    }
+    .main>img{
+
+       display: none;
+    }
+
+    .main .nav .nav-links{
+
+        display: none;
+    }
+
+
+    .main .nav h1
+    {
+       font-size: 5vw;
+       text-transform: capitalize;
+       font-weight: 500;
+      
+    }
+
+
+    /* about -us */
+
+    .about-us {
+
+       min-height: 60vh;
+        padding: 10px 0px;
+       
+       
+    }
+    .text {
+    
+        width: 100%;
+        min-height: 20vh;
+            
+    }
+    .text h3{
+
+        width:100vw;
+        
+    }
+
+    .text p {
+      
+        font-size: 4vmin;
+    }
+   
+
+    /* description */
+
+
+    .description {
+
+        display: block;
+    }
+
+    .img-container {
+        width: 100%;
+        
+    }
+
+    .text-container {
+
+        width: 100%;
+        min-height: 65vh;
+        align-items: start;
+        justify-content: start;
+        padding: 20px 40px;
+        /* background-color: blue; */
+    }
+
+    /* brands */
+
+    .brands {
+
+        width: 100%;
+        min-height: 60vh;
+
+    }
+
+    .brands p {
+         width: 90vw;
+         font-size: 5.5vmin;
+         font-weight: 700;
+      
+    }
+
+    .brands-container {
+        
+        min-height: 60vh;
+        padding: 0px 50px; 
+      
+    }
+
+    /* Ads-poster */
+
+    .ads-poster {
+
+        width: 100%;
+        min-height: 100vh;
+        margin-bottom:70px;
+        
+    }
+    .ads-container {
+
+        display: block;
+        min-height: 50vh;
+        padding: 10px 50px;
+       
+    }
+
+    .ads-container .poster-1{
+    
+        margin-bottom:20px;
+      
+    }
+
+    .ads-container .poster-2 {
+
+        margin-bottom:px;
+      
+    }
+
+    .ads-poster .link .photo{
+
+        width: 40px;
+        height: 40px;
+        border: 2px solid red;
+    }
+
+    .ads-poster .link h4{
+        
+        width: 140px;
+        font-size: 20px;
+    }
+
+    .ads-poster .link a {
+        width: 90px;
+        padding: 2px 2px;
+    }
+
+
+    /* Marketing */
+
+
+
+
+    /* footer */
+
+    .footer .top .callback {
+      
+        width: 70%;
+        left: 16%;
+    }
+
+     .bottom {
+        
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+     }
+
+     .bottom .b-top {
+        
+        gap: 0px;
+        padding-top: 10px ;
+     }
+
+     .b-top .title {
+
+        width: 25%;
+        height: 50%;
+      
+     }
+     .b-top .title h1 {
+        font-size: 21px;
+     }
+
+
+     .b-top .learn a {
+        
+        font-size: 15px;
+     }
+
+
+     .b-top .explore {
+        width: 15%;
+     }
+     .b-top .explore a{
+
+        font-size: 15px;
+     }
+
+     .b-top .find-us {
+
+        width: 23%;
+       
+     }
+     .b-top .find-us a {
+        
+        font-size: 15px;
+     }
+
+     .b-top .company a {
+
+        font-size: 15px;
+     }
+    
+     .last-footer {
+        
+        padding: 10px 0px;
+       
+     }
+     
+     .last-footer i {
+
+        font-size: 15px;
+     }
+     .last-footer p{
+
+        font-size: 10px;
+     } 
+
+
+}
