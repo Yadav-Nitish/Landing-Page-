@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+
+}
+
+.container{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 999;
+    background-color: #4b4b4b5b;
+    backdrop-filter: blur(10px);
+}
+
+.head-left{
+    display: flex;
+    align-items: center;
+}
+.head-left img{
+
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+.head-left button{
+
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.head-left button:hover{
+    opacity: 0.7;
+}
+
+.head-right ul {
+    display: flex;
+}
+
+.head-right ul li{
+    list-style: none;
+}
+
+
+.head-right a{
+     text-decoration: none;
+     padding-left: 25px;
+     color:white;
+     font-size: 15px;
+}
+
+
+/* Hero */
+
+.hero-section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-vid{
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-video{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-info{
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    
+}
+.hero-info h1{
+
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-info button{
+    background-color: #edff66;
+    border: 2px solid #edff66;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    transform: 0.3s;
+}
+.hero-info button:hover{
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 15px;
+}
+
+.gaming-text{
+
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.next-btn{
+     width: 200px;
+     height: 200px;
+    
+     position: absolute;
+     top:45%;
+     left: 45%;
+     border-radius: 20%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #edff66b6;
+     color: black;
+     font-size: 30px;
+     cursor: pointer;
+     font-weight: bold;
+     opacity: 0.2;
+     transition:0.5s; 
+}
+
+.next-btn:hover{
+    
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.616);
+} 
+
+
+
+
+
+/* Blur Animation */
+
+ .autoBlur{
+
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation{
+
+    0%{
+        filter: blur(40px);
+    }
+    40%,60%{
+        filter: blur(0);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(40px);
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+} 
+
+
+
+ 
+
+
+
+
+@media screen and ( max-width: 650px){
+    
+    .body,html{
+        width: 100vw;
+        height: 100vh;
+    }
+    header{
+        padding: 0 15px;
+       
+    }
+    .hero-vid{
+        width: 100vw;
+    } 
+    .head-left button{
+        display: none;
+    }
+    .head-right a{
+        font-size: 12px;
+        padding:0 5px;
+    }
+    .head-right a:hover{
+
+        border-bottom: 5px solid #0f1217;
+    }
+    .hero-info{
+        left: 5% ;
+    }
+    .hero-section h1{
+        font-size: 80px;
+    }
+    .next-btn{
+        width:150px;
+        height: 150px;
+        left: 30%;
+        top:50%;
+        opacity: 0.3;
+    }
+
+ 
+}
